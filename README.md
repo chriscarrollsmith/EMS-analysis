@@ -10,3 +10,5 @@
 # Full load (expect a long wait)
 python3 fetch_ems_to_sqlite.py
 ```
+
+Database is located at ems_incidents.sqlite.

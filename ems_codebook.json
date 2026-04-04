@@ -1,0 +1,1134 @@
+{
+  "source_url": "https://data.cityofnewyork.us/api/views/76xm-jjuj/files/5f77cf01-4e52-443b-a718-a3e6567e83f2?download=true&filename=EMS_incident_dispatch_data_description.xlsx",
+  "sheets": [
+    {
+      "name": "EMS File Description",
+      "records": [
+        {
+          "field_name": "CAD_INCIDENT_ID",
+          "field_description": "An incident identifier comprising the julian date and a 4 character sequence number starting at 1 each day."
+        },
+        {
+          "field_name": "INCIDENT_DATETIME",
+          "field_description": "The date and time the incident was created in the dispatch system"
+        },
+        {
+          "field_name": "INITIAL_CALL_TYPE *",
+          "field_description": "The call type assigned at the time of incident creation.",
+          "column_2": "Note: The call type does not reflect the actual condition of the patient.  It is a determination based on information obtained from the caller for the purpose of defining severity and resource allocation."
+        },
+        {
+          "field_name": "INITIAL_SEVERITY_LEVEL_CODE",
+          "field_description": "The segment(priority) assigned at the time of incident creation."
+        },
+        {
+          "field_name": "FINAL_CALL_TYPE *",
+          "field_description": "The call type at the time the incident closes.",
+          "column_2": "Note: The call type does not reflect the actual condition of the patient.  It is a determination based on information obtained from the caller for the purpose of defining severity and resource allocation. The call type does not change based on the findings of the on scene ambulance crew."
+        },
+        {
+          "field_name": "FINAL_SEVERITY_LEVEL_CODE",
+          "field_description": "The segment(priority) assigned at the time the incident closes."
+        },
+        {
+          "field_name": "FIRST_ASSIGNMENT_DATETIME",
+          "field_description": "The date and time the first unit is assigned."
+        },
+        {
+          "field_name": "VALID_DISPATCH_RSPNS_TIME_INDC",
+          "field_description": "Indicates that the components comprising the calculation of the DISPATCH_RESPONSE_SECONDS_QY are valid."
+        },
+        {
+          "field_name": "DISPATCH_RESPONSE_SECONDS_QY",
+          "field_description": "The time elapsed in seconds between the incident_datetime and the first_assignment_datetime."
+        },
+        {
+          "field_name": "FIRST_ACTIVATION_DATETIME",
+          "field_description": "The date and time the first unit gives the signal that it is enroute to the location of the incident."
+        },
+        {
+          "field_name": "FIRST_ON_SCENE_DATETIME",
+          "field_description": "The date and time the first unit signals that it has arrived at the location of the incident."
+        },
+        {
+          "field_name": "VALID_INCIDENT_RSPNS_TIME_INDC",
+          "field_description": "Indicates that the components comprising the calculation of the INCIDENT_RESPONSE_SECONDS_QY are valid."
+        },
+        {
+          "field_name": "INCIDENT_RESPONSE_SECONDS_QY",
+          "field_description": "The time elapsed in seconds between the incident_datetime and the first_on_scene_datetime."
+        },
+        {
+          "field_name": "INCIDENT_TRAVEL_TM_SECONDS_QY",
+          "field_description": "The time elapsed in seconds between the first_assignment_datetime and the first_on_scene_datetime."
+        },
+        {
+          "field_name": "FIRST_TO_HOSP_DATETIME",
+          "field_description": "The date and time the first unit gives the signal that it is enroute to the hospital."
+        },
+        {
+          "field_name": "FIRST_HOSP_ARRIVAL_DATETIME",
+          "field_description": "The date and time the first unit signals that it has arrived at the hospital."
+        },
+        {
+          "field_name": "INCIDENT_CLOSE_DATETIME",
+          "field_description": "The date and time the incident closes in the dispatch system."
+        },
+        {
+          "field_name": "HELD_INDICATOR",
+          "field_description": "Indicates that for some reason a unit could not be assigned immediately"
+        },
+        {
+          "field_name": "INCIDENT_DISPOSITION_CODE ",
+          "field_description": "A code indicating the final outcome of the incident. See incident dispositions."
+        },
+        {
+          "field_name": "BOROUGH",
+          "field_description": "The borough of the incident location."
+        },
+        {
+          "field_name": "INCIDENT_DISPATCH_AREA",
+          "field_description": "The dispatch area of the incident."
+        },
+        {
+          "field_name": "ZIPCODE",
+          "field_description": "The zip code of the incident."
+        },
+        {
+          "field_name": "POLICEPRECINCT",
+          "field_description": "The police precinct of the incident."
+        },
+        {
+          "field_name": "CITYCOUNCILDISTRICT",
+          "field_description": "The city council district."
+        },
+        {
+          "field_name": "COMMUNITYDISTRICT",
+          "field_description": "The community district."
+        },
+        {
+          "field_name": "COMMUNITYSCHOOLDISTRICT",
+          "field_description": "The community school district."
+        },
+        {
+          "field_name": "CONGRESSIONALDISTRICT ",
+          "field_description": "The congressional district."
+        },
+        {
+          "field_name": "REOPEN_INDICATOR",
+          "field_description": "Indicates that at some point the incident was closed but then reopened."
+        },
+        {
+          "field_name": "SPECIAL_EVENT_INDICATOR",
+          "field_description": "Indicates that the incident was a special event such as the NYC Marathon."
+        },
+        {
+          "field_name": "STANDBY_INDICATOR",
+          "field_description": "Indicates that the units were assigned to stand by incase they were needed."
+        },
+        {
+          "field_name": "TRANSFER_INDICATOR",
+          "field_description": "Indicates that the incident was created for the  transportation of a patient from one facility (ie a hospital or nursing home) to another."
+        }
+      ]
+    },
+    {
+      "name": "Incident Dispositions",
+      "records": [
+        {
+          "incident_disposition_code": "82",
+          "description": "transporting patient"
+        },
+        {
+          "incident_disposition_code": "83",
+          "description": "patient pronounced dead"
+        },
+        {
+          "incident_disposition_code": "87",
+          "description": "cancelled"
+        },
+        {
+          "incident_disposition_code": "90",
+          "description": "unfounded"
+        },
+        {
+          "incident_disposition_code": "91",
+          "description": "condition corrected"
+        },
+        {
+          "incident_disposition_code": "92",
+          "description": "treated not transported"
+        },
+        {
+          "incident_disposition_code": "93",
+          "description": "refused medical aid"
+        },
+        {
+          "incident_disposition_code": "94",
+          "description": "treated and transported"
+        },
+        {
+          "incident_disposition_code": "95",
+          "description": "triaged at scene no transport"
+        },
+        {
+          "incident_disposition_code": "96",
+          "description": "patient gone on arrival"
+        },
+        {
+          "incident_disposition_code": "CANCEL",
+          "description": "cancelled"
+        },
+        {
+          "incident_disposition_code": "DUP",
+          "description": "duplicate incident"
+        },
+        {
+          "incident_disposition_code": "NOTSNT",
+          "description": "unit not sent"
+        },
+        {
+          "incident_disposition_code": "ZZZZZZ",
+          "description": "no disposition"
+        }
+      ]
+    },
+    {
+      "name": "Call Type Descriptions",
+      "records": [
+        {
+          "call_type_code": "ARREFC",
+          "call_type_description": "CARDIAC OR RESPIRATORY ARREST - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "ARREFT",
+          "call_type_description": "CARDIAC OR RESPIRATORY ARREST - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "ARRERF",
+          "call_type_description": "CARD OR RESP ARREST-RASH and FEVER"
+        },
+        {
+          "call_type_code": "ARREST",
+          "call_type_description": "CARDIAC ARREST"
+        },
+        {
+          "call_type_code": "ARSTFC",
+          "call_type_description": "CARD OR RESP ARREST-FEVERCOUGH"
+        },
+        {
+          "call_type_code": "CHOKE",
+          "call_type_description": "CHOKING"
+        },
+        {
+          "call_type_code": "CHOKFC",
+          "call_type_description": "CHOKING - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "CHOKRF",
+          "call_type_description": "CHOKING RASH and FEVER"
+        },
+        {
+          "call_type_code": "T-ARST",
+          "call_type_description": "CARDIAC ARREST"
+        },
+        {
+          "call_type_code": "ACTIVE",
+          "call_type_description": "ACTIVE SHOOTER"
+        },
+        {
+          "call_type_code": "ANAPFC",
+          "call_type_description": "ANAPHYLACTIC SHOCK - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "ANAPFT",
+          "call_type_description": "ANAPHYLACTIC SHOCK - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "ANAPH",
+          "call_type_description": "ANAPHYLAXIS"
+        },
+        {
+          "call_type_code": "ANAPRF",
+          "call_type_description": "ANAPHYLACTIC SHOCK-RASH and FEVER"
+        },
+        {
+          "call_type_code": "ASTHMA",
+          "call_type_description": "ASTHMA ATTACK - MAJOR"
+        },
+        {
+          "call_type_code": "ASTHMC",
+          "call_type_description": "ASTHMA ATTACK - CRITICAL"
+        },
+        {
+          "call_type_code": "ASTHMP",
+          "call_type_description": "ASTHMA ATTACK - PEDS <15 YRS OLD"
+        },
+        {
+          "call_type_code": "ASTHRF",
+          "call_type_description": "ASTHMA ATTACK - RASH and FEVER"
+        },
+        {
+          "call_type_code": "CARDBR",
+          "call_type_description": "DIFFICULTY BREATHING WITH CHEST PAIN"
+        },
+        {
+          "call_type_code": "CDBRFC",
+          "call_type_description": "DIFFBR W/CHEST PN-FEVER and COUGH"
+        },
+        {
+          "call_type_code": "CDBRFT",
+          "call_type_description": "DIFFBR W/CHEST PN FEVER\\TRAVEL"
+        },
+        {
+          "call_type_code": "CDBRRF",
+          "call_type_description": "DIFFBR W/CHEST PN-RASH and FEVER"
+        },
+        {
+          "call_type_code": "CVACFC",
+          "call_type_description": "STROKE - CRITICAL - FEVER&COUGH"
+        },
+        {
+          "call_type_code": "CVACFT",
+          "call_type_description": "STROKE - CRITICAL - PATIENT FEVER\\TRAVEL"
+        },
+        {
+          "call_type_code": "CVACRF",
+          "call_type_description": "STROKE CRITICAL - RASH and FEVER"
+        },
+        {
+          "call_type_code": "DIFFBR",
+          "call_type_description": "DIFFICULTY BREATHING"
+        },
+        {
+          "call_type_code": "DIFFFC",
+          "call_type_description": "DIFFICULTY BREATHING - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "DIFFFT",
+          "call_type_description": "DIFFICULTY BREATHING - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "DIFFRF",
+          "call_type_description": "DIFFICULTY BREATHING - RESPIRATORY FAILURE"
+        },
+        {
+          "call_type_code": "DROWN",
+          "call_type_description": "DROWNING"
+        },
+        {
+          "call_type_code": "JUMPDN",
+          "call_type_description": "JUMPED - DOWN"
+        },
+        {
+          "call_type_code": "MCI21P",
+          "call_type_description": "ONE ALARM FIRE"
+        },
+        {
+          "call_type_code": "MCI22P",
+          "call_type_description": "TWO ALARM FIRE"
+        },
+        {
+          "call_type_code": "MCI23P",
+          "call_type_description": "THREE ALARM FIRE"
+        },
+        {
+          "call_type_code": "MCI24P",
+          "call_type_description": "FOUR ALARM FIRE"
+        },
+        {
+          "call_type_code": "MCI25P",
+          "call_type_description": "FIVE ALARM FIRE OR GREATER"
+        },
+        {
+          "call_type_code": "MCI26P",
+          "call_type_description": "OCCUPIED HIGH-RISE BUILDING"
+        },
+        {
+          "call_type_code": "MCI27P",
+          "call_type_description": "MEDICAL FACILITY EVACUATION"
+        },
+        {
+          "call_type_code": "MCI28P",
+          "call_type_description": "CRIMINAL DETECTION FACIL INCID"
+        },
+        {
+          "call_type_code": "MCI29P",
+          "call_type_description": "REPORT OF EXPLOSIVES"
+        },
+        {
+          "call_type_code": "MCI30P",
+          "call_type_description": "EXPLOSION"
+        },
+        {
+          "call_type_code": "MCI31P",
+          "call_type_description": "RAPID TRANSIT/RAIL INCIDENT"
+        },
+        {
+          "call_type_code": "MCI32P",
+          "call_type_description": "GROUND TRANSPORT INCIDENT"
+        },
+        {
+          "call_type_code": "MCI33P",
+          "call_type_description": "STRUCTURAL COLLASPE"
+        },
+        {
+          "call_type_code": "MCI34P",
+          "call_type_description": "CONSTRUCTION/DEMOLITION INCID"
+        },
+        {
+          "call_type_code": "MCI35P",
+          "call_type_description": "CONFINED SPACE INCIDENT"
+        },
+        {
+          "call_type_code": "MCI38P",
+          "call_type_description": "MARINE / HARBOR INCIDENT"
+        },
+        {
+          "call_type_code": "MCI39P",
+          "call_type_description": "AIRCRAFT EMERGENCY STANDBY"
+        },
+        {
+          "call_type_code": "MCI40P",
+          "call_type_description": "AIRCRAFT INCIDENT / CRASH"
+        },
+        {
+          "call_type_code": "MCI42P",
+          "call_type_description": "CIVIL DISTRUBANCE"
+        },
+        {
+          "call_type_code": "MCI43P",
+          "call_type_description": "HOSTAGE SITUATION / BARRICADED"
+        },
+        {
+          "call_type_code": "MCI44P",
+          "call_type_description": "POWER FAILURE / BLACKOUT"
+        },
+        {
+          "call_type_code": "MCI48P",
+          "call_type_description": "HAZARDOUS MATERIALS INCIDENT"
+        },
+        {
+          "call_type_code": "MCI50P",
+          "call_type_description": "ACTIVE SHOOTER"
+        },
+        {
+          "call_type_code": "MCI58P",
+          "call_type_description": "PLANNED MCI / STANDBY RESPONSE"
+        },
+        {
+          "call_type_code": "MCI59P",
+          "call_type_description": "ALL OTHER MCI'S"
+        },
+        {
+          "call_type_code": "MCI76",
+          "call_type_description": "HIGH RISE FIRE - COMMERCIAL"
+        },
+        {
+          "call_type_code": "MCI77",
+          "call_type_description": "HIGH RISE FIRE - RESIDENTIAL"
+        },
+        {
+          "call_type_code": "MCI80P",
+          "call_type_description": "HAZARDOUS MATERIALS INCIDENT"
+        },
+        {
+          "call_type_code": "MVAINM",
+          "call_type_description": "AUTO ACC W/ ALS SENT IF NO BLS FOUND"
+        },
+        {
+          "call_type_code": "MVAINS",
+          "call_type_description": "AUTO ACC W/ SUPERVISOR SENT"
+        },
+        {
+          "call_type_code": "OBCOMP",
+          "call_type_description": "OBSTETRIC COMPLICATIONS"
+        },
+        {
+          "call_type_code": "PEDSTS",
+          "call_type_description": "PEDESTRIAN STRUCK / SUPERVISOR ALSO SENT"
+        },
+        {
+          "call_type_code": "STATEP",
+          "call_type_description": "STATUS EPILEPTICUS"
+        },
+        {
+          "call_type_code": "STATFC",
+          "call_type_description": "STATUS EPILEPTICUS - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "STATFT",
+          "call_type_description": "STATUS EPILEPTICUS - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "STATRF",
+          "call_type_description": "MULT OR PROLONG SEIZR-RASH and FEV"
+        },
+        {
+          "call_type_code": "T-ACTV",
+          "call_type_description": "ACTIVE SHOOTER"
+        },
+        {
+          "call_type_code": "T-ASTH",
+          "call_type_description": "ASTHMA ATTACK"
+        },
+        {
+          "call_type_code": "T-CDBR",
+          "call_type_description": "DIFF BREATHING WITH CHEST PAIN"
+        },
+        {
+          "call_type_code": "T-CVAC",
+          "call_type_description": "CVA (STROKE)"
+        },
+        {
+          "call_type_code": "T-DFBR",
+          "call_type_description": "DIFFICULT BREATHER"
+        },
+        {
+          "call_type_code": "TRAUMA",
+          "call_type_description": "MULTIPLE TRAUMA PATIENT"
+        },
+        {
+          "call_type_code": "TRAUMS",
+          "call_type_description": "MULTIPLE TRAUMA PATIENT SUPERVISOR ALSO SENT"
+        },
+        {
+          "call_type_code": "T-STEP",
+          "call_type_description": "STATUS EPILEPTICUS"
+        },
+        {
+          "call_type_code": "T-TRMA",
+          "call_type_description": "MULTIPLE TRAUMA PATIENT"
+        },
+        {
+          "call_type_code": "T-UNC",
+          "call_type_description": "UNCONSCIOUS PATIENT"
+        },
+        {
+          "call_type_code": "UNC",
+          "call_type_description": "UNCONSCIOUS PATIENT"
+        },
+        {
+          "call_type_code": "UNCFC",
+          "call_type_description": "UNCONSCIOUS PATIENT - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "UNCFT",
+          "call_type_description": "UNCONSCIOUS PATIENT - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "UNCRF",
+          "call_type_description": "UNCONSCIOUS PATIENT - RASH & FEVER"
+        },
+        {
+          "call_type_code": "VENOM",
+          "call_type_description": "VENOM - SNAKE BITES"
+        },
+        {
+          "call_type_code": "ALMNFC",
+          "call_type_description": "ALT MENTAL STATUS-FEVER&COUGH"
+        },
+        {
+          "call_type_code": "ALTMFC",
+          "call_type_description": "ALTERED MENTAL STATUS - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "ALTMFT",
+          "call_type_description": "ALTERED MENTAL STATUS - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "ALTMRF",
+          "call_type_description": "ALT MENTAL STATUS-RASH and FEVER"
+        },
+        {
+          "call_type_code": "AMPMAJ",
+          "call_type_description": "AMPUTATION - ARM, HAND, LEG, FOOT MAJOR"
+        },
+        {
+          "call_type_code": "ASTHFC",
+          "call_type_description": "ASTHMA ATTACK - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "ASTHFT",
+          "call_type_description": "ASTHMA ATTACK - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "ASTHMB",
+          "call_type_description": "ASTHMA ATTACK"
+        },
+        {
+          "call_type_code": "BURNHZ",
+          "call_type_description": "CHEMICAL OR RADIATION BURN"
+        },
+        {
+          "call_type_code": "BURNMA",
+          "call_type_description": "MAJOR BURNS 18% ADLT 10% CHILD"
+        },
+        {
+          "call_type_code": "CARD",
+          "call_type_description": "CARDIAC CONDITION"
+        },
+        {
+          "call_type_code": "CARDFC",
+          "call_type_description": "CARDIAC CONDITION - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "CARDFT",
+          "call_type_description": "CARDIAC CONDITION - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "CARDRF",
+          "call_type_description": "CARDIAC CONDITION-RASH and FEVER"
+        },
+        {
+          "call_type_code": "DRUGFT",
+          "call_type_description": "HX DRUG ALCH ABUSE-FEVR\\TRAVEL"
+        },
+        {
+          "call_type_code": "ELECT",
+          "call_type_description": "ELECTROCUTION"
+        },
+        {
+          "call_type_code": "GYNMAJ",
+          "call_type_description": "GYNECOLOGY - MAJOR - BLEEDING/SEVERE PAIN"
+        },
+        {
+          "call_type_code": "INBLED",
+          "call_type_description": "INTERNAL BLEEDING"
+        },
+        {
+          "call_type_code": "INBLFC",
+          "call_type_description": "INTERNAL BLEEDING - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "INBLFT",
+          "call_type_description": "INTERNAL BLEEDING - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "INBLRF",
+          "call_type_description": "INTERNAL BLEEDING-RASH and FEVER"
+        },
+        {
+          "call_type_code": "INJALS",
+          "call_type_description": "INJURY - LOWER EXT IN ELDERLY"
+        },
+        {
+          "call_type_code": "INJMAJ",
+          "call_type_description": "INJURY - MAJOR"
+        },
+        {
+          "call_type_code": "MEDRFT",
+          "call_type_description": "REACTION TO MED - FEVER\\TRAVEL"
+        },
+        {
+          "call_type_code": "OBMAJ",
+          "call_type_description": "MAJOR OBSTETRICAL COMPLAINT"
+        },
+        {
+          "call_type_code": "OBOUT",
+          "call_type_description": "BABY OUT OR IMMINENT BIRTH"
+        },
+        {
+          "call_type_code": "PD13C",
+          "call_type_description": "POLICE - CONFIRMED - Police in danger/injured, confirmed"
+        },
+        {
+          "call_type_code": "PEDFT",
+          "call_type_description": "PEDIATRIC - SICK <5 YRS - PATIENT FEVER\\TRAVEL"
+        },
+        {
+          "call_type_code": "PEDSTR",
+          "call_type_description": "PEDESTRIAN STRUCK"
+        },
+        {
+          "call_type_code": "RESPIR",
+          "call_type_description": "RESPIRATORY DISTRESS"
+        },
+        {
+          "call_type_code": "SEIZFC",
+          "call_type_description": "SEIZURES - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "SEIZFT",
+          "call_type_description": "SEIZURES - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "SEIZRF",
+          "call_type_description": "SEIZURES - RASH and FEVER"
+        },
+        {
+          "call_type_code": "SHOT",
+          "call_type_description": "GUN SHOT WOUND"
+        },
+        {
+          "call_type_code": "SICMFT",
+          "call_type_description": "MINOR ILLNESS - FEVER\\TRAVEL"
+        },
+        {
+          "call_type_code": "STAB",
+          "call_type_description": "STABBING"
+        },
+        {
+          "call_type_code": "T-ALTM",
+          "call_type_description": "ALTERED MENTAL STATUS"
+        },
+        {
+          "call_type_code": "T-CARD",
+          "call_type_description": "CARDIAC CONDITION"
+        },
+        {
+          "call_type_code": "T-OBST",
+          "call_type_description": "MAJOR OBSTETRICAL COMPLAINT"
+        },
+        {
+          "call_type_code": "T-SHOT",
+          "call_type_description": "GUN SHOT WOUND"
+        },
+        {
+          "call_type_code": "T-STAB",
+          "call_type_description": "STABBING "
+        },
+        {
+          "call_type_code": "UNKNOW",
+          "call_type_description": "CALLER HAS NO PT MEDICAL INFO"
+        },
+        {
+          "call_type_code": "ALTMEN",
+          "call_type_description": "ALTERED MENTAL STATUS"
+        },
+        {
+          "call_type_code": "BURNHM",
+          "call_type_description": "CHEMICAL OR RADIATION BURN"
+        },
+        {
+          "call_type_code": "CVA",
+          "call_type_description": "STROKE"
+        },
+        {
+          "call_type_code": "CVAC",
+          "call_type_description": "STROKE - CRITICAL"
+        },
+        {
+          "call_type_code": "CVAFC",
+          "call_type_description": "STROKE - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "CVARF",
+          "call_type_description": "STROKE - RASH and FEVER"
+        },
+        {
+          "call_type_code": "DRUG",
+          "call_type_description": "HISTORY OF DRUG OR ALCOHOL ABUSE"
+        },
+        {
+          "call_type_code": "DRUGFC",
+          "call_type_description": "HISTORY OF DRUG OR ALCOHOL ABUSE - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "DRUGRF",
+          "call_type_description": "HX DRUG ALCHL ABUSE-RASH and FEVER"
+        },
+        {
+          "call_type_code": "HEAT",
+          "call_type_description": "HEAT EXHAUSTION"
+        },
+        {
+          "call_type_code": "MVAINJ",
+          "call_type_description": "AUTO ACCIDENT - W/ INJURIES"
+        },
+        {
+          "call_type_code": "OBMIS",
+          "call_type_description": "MISCARRIAGE"
+        },
+        {
+          "call_type_code": "PEDFC",
+          "call_type_description": "PEDIATRIC - SICK <5 YRS - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "PEDRF",
+          "call_type_description": "PEDIATRIC - SICK <5 YRS - RASH & FEVER"
+        },
+        {
+          "call_type_code": "RESPFC",
+          "call_type_description": "RESPIRATORY DISTRESS - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "RESPFT",
+          "call_type_description": "RESPIRATORY DISTRESS - PATIENT FEVER/TRAVEL"
+        },
+        {
+          "call_type_code": "RESPRF",
+          "call_type_description": "RESP DISTRESS - RASH  and FEVER"
+        },
+        {
+          "call_type_code": "SICPED",
+          "call_type_description": "SICK - PEDIATRIC <5 YEAR OLD"
+        },
+        {
+          "call_type_code": "T-INBL",
+          "call_type_description": "INTERNAL BLEEDING"
+        },
+        {
+          "call_type_code": "T-TEXT",
+          "call_type_description": "REQUEST FOR EMS VIA TEXT"
+        },
+        {
+          "call_type_code": "T-UNKN",
+          "call_type_description": "CALLER HAS NO PT MEDICAL INFO"
+        },
+        {
+          "call_type_code": "ABDFC",
+          "call_type_description": "ABDOMINAL - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "ABDPFC",
+          "call_type_description": "ABDOMINAL PAIN - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "ABDPFT",
+          "call_type_description": "ABDOMINAL PAIN - PATIENT FEVER\\TRAVEL"
+        },
+        {
+          "call_type_code": "ABDPN",
+          "call_type_description": "ABDOMINAL PAIN"
+        },
+        {
+          "call_type_code": "ABDPRF",
+          "call_type_description": "ABDOMINAL PAIN - RASH and FEVER"
+        },
+        {
+          "call_type_code": "AMPMIN",
+          "call_type_description": "AMPUTATION - FINGERS OR TOES MINOR"
+        },
+        {
+          "call_type_code": "COLD",
+          "call_type_description": "HYPOTHERMIA"
+        },
+        {
+          "call_type_code": "EDPT",
+          "call_type_description": "EDP TRANSPORT REQUESTED"
+        },
+        {
+          "call_type_code": "GYNHEM",
+          "call_type_description": "GYNECOLOGY - BLEEDING/PATTIENT NOT PREGNANT"
+        },
+        {
+          "call_type_code": "HYPTN",
+          "call_type_description": "HYPERTENSION"
+        },
+        {
+          "call_type_code": "INHALE",
+          "call_type_description": "INHALATION OF SMOKE"
+        },
+        {
+          "call_type_code": "INJURY",
+          "call_type_description": "INJURY - NON-CRITICAL"
+        },
+        {
+          "call_type_code": "MEDRFC",
+          "call_type_description": "REACTION TO MEDICATION - FEVER & COUGH"
+        },
+        {
+          "call_type_code": "MEDRRF",
+          "call_type_description": "REACTION TO MED - RASH and FEVER"
+        },
+        {
+          "call_type_code": "MEDRXN",
+          "call_type_description": "REACTION TO MEDICATION"
+        },
+        {
+          "call_type_code": "MEDVAC",
+          "call_type_description": "MEDICAL EVACUATION T/C AUTHORITY ONLY"
+        },
+        {
+          "call_type_code": "OBLAB",
+          "call_type_description": "FEMALE IN LABOR"
+        },
+        {
+          "call_type_code": "PREMIE",
+          "call_type_description": "PREMATURE BIRTH - Inter-facility transport of premature baby (last used 10/5/94)"
+        },
+        {
+          "call_type_code": "RESCUE",
+          "call_type_description": "RESP DISTRESS - FEVER&COUGH"
+        },
+        {
+          "call_type_code": "T-ABDP",
+          "call_type_description": "ABDOMINAL PAIN"
+        },
+        {
+          "call_type_code": "T-INJ",
+          "call_type_description": "NON-CRITICAL INJURY"
+        },
+        {
+          "call_type_code": "T-MVAI",
+          "call_type_description": "AUTO ACC W/INJURIES"
+        },
+        {
+          "call_type_code": "CHILDA",
+          "call_type_description": "CHILD ABUSE"
+        },
+        {
+          "call_type_code": "COVINF",
+          "call_type_description": "ASYMPTOMATIC COVID – 311 TRANSFER"
+        },
+        {
+          "call_type_code": "FIRE75",
+          "call_type_description": "FIRE - WORKING FIRE"
+        },
+        {
+          "call_type_code": "FIRE76",
+          "call_type_description": "FIRE - HIGH RISE COMMERCIAL"
+        },
+        {
+          "call_type_code": "FIRE77",
+          "call_type_description": "FIRE - HIGH RISE RESIDENTIAL"
+        },
+        {
+          "call_type_code": "MVA",
+          "call_type_description": "AUTO ACCIDENT - NO CONFIRMED INJURY"
+        },
+        {
+          "call_type_code": "RAPE",
+          "call_type_description": "RAPE"
+        },
+        {
+          "call_type_code": "SAFE",
+          "call_type_description": "SEXUAL ASSAULT"
+        },
+        {
+          "call_type_code": "SEIZR",
+          "call_type_description": "SEIZURES"
+        },
+        {
+          "call_type_code": "SICK",
+          "call_type_description": "SICK"
+        },
+        {
+          "call_type_code": "SICKFC",
+          "call_type_description": "SICK - COUGH & FEVER"
+        },
+        {
+          "call_type_code": "SICKFT",
+          "call_type_description": "SICK - PATIENT FEVER\\TRAVEL"
+        },
+        {
+          "call_type_code": "SICKRF",
+          "call_type_description": "SICK - RASH AND FEVER"
+        },
+        {
+          "call_type_code": "T-OTHR",
+          "call_type_description": "UNKNOWN CONDITION"
+        },
+        {
+          "call_type_code": "T-SICK",
+          "call_type_description": "SICK"
+        },
+        {
+          "call_type_code": "BURNMI",
+          "call_type_description": "MINOR BURNS <18% ADLT OR <10%"
+        },
+        {
+          "call_type_code": "DOAU",
+          "call_type_description": "DEATH CONFIRM BY MEDICAL AUTH"
+        },
+        {
+          "call_type_code": "EDPC",
+          "call_type_description": "PSYCHIATRIC PATIENT VIOLENT/WEAPONS"
+        },
+        {
+          "call_type_code": "EDPE",
+          "call_type_description": "BEHAVIORAL HEALTH  POST EVAL"
+        },
+        {
+          "call_type_code": "EDPM",
+          "call_type_description": "PSYCH PATIENT NON-VIOLENT     "
+        },
+        {
+          "call_type_code": "EDPW",
+          "call_type_description": "PSYCHIATRIC PATIENT NYC WELL"
+        },
+        {
+          "call_type_code": "INJMIN",
+          "call_type_description": "INJURY - MINOR"
+        },
+        {
+          "call_type_code": "JUMPUP",
+          "call_type_description": "JUMPED - UP (Jumper Up - Patient potentially going to jump from ledge/elevation)"
+        },
+        {
+          "call_type_code": "OTHER",
+          "call_type_description": "UNKNOWN CONDITION"
+        },
+        {
+          "call_type_code": "PD13",
+          "call_type_description": "POLICE - UNCONFIRMED - Police in danger/injured, unconfirmed"
+        },
+        {
+          "call_type_code": "SICMFC",
+          "call_type_description": "MINOR ILLNESS - FEVER and COUGH"
+        },
+        {
+          "call_type_code": "SICMIN",
+          "call_type_description": "SICK - MINOR ILLNESS"
+        },
+        {
+          "call_type_code": "SICMRF",
+          "call_type_description": "MINOR ILLNESS - RASH and FEVER"
+        },
+        {
+          "call_type_code": "T-EDP",
+          "call_type_description": "PSYCHIATRIC PATIENT"
+        },
+        {
+          "call_type_code": "DIALYS",
+          "call_type_description": "DIALYSIS"
+        },
+        {
+          "call_type_code": "DOA",
+          "call_type_description": "DEATH CONFIRM BY MEDICAL AUTHENTICATION (EMS)"
+        },
+        {
+          "call_type_code": "EDP",
+          "call_type_description": "PSYCHIATRIC PATIENT"
+        },
+        {
+          "call_type_code": "EVAC",
+          "call_type_description": "EVACUATION (Evacuation - Utilized during Hurricaine Irene 8/26-27/2011)"
+        },
+        {
+          "call_type_code": "MCI21",
+          "call_type_description": "ONE ALARM FIRE"
+        },
+        {
+          "call_type_code": "MCI22",
+          "call_type_description": "TWO ALARM FIRE"
+        },
+        {
+          "call_type_code": "MCI23",
+          "call_type_description": "THREE ALARM FIRE"
+        },
+        {
+          "call_type_code": "MCI24",
+          "call_type_description": "FOUR ALARM FIRE"
+        },
+        {
+          "call_type_code": "MCI25",
+          "call_type_description": "FIVE ALARM FIRE OR GREATER"
+        },
+        {
+          "call_type_code": "MCI26",
+          "call_type_description": "OCCUPIED HIGH-RISE BUILDING"
+        },
+        {
+          "call_type_code": "MCI27",
+          "call_type_description": "MEDICAL FACILITY EVACUATION"
+        },
+        {
+          "call_type_code": "MCI28",
+          "call_type_description": "CRIMINAL DETECTION FACIL INCID"
+        },
+        {
+          "call_type_code": "MCI29",
+          "call_type_description": "REPORT OF EXPLOSIVES"
+        },
+        {
+          "call_type_code": "MCI30",
+          "call_type_description": "EXPLOSION"
+        },
+        {
+          "call_type_code": "MCI31",
+          "call_type_description": "RAPID TRANSIT/RAIL INCIDENT"
+        },
+        {
+          "call_type_code": "MCI32",
+          "call_type_description": "GROUND TRANSPORT INCIDENT"
+        },
+        {
+          "call_type_code": "MCI33",
+          "call_type_description": "STRUCTURAL COLLASPE"
+        },
+        {
+          "call_type_code": "MCI34",
+          "call_type_description": "CONSTRUCTION/DEMOLITION INCID"
+        },
+        {
+          "call_type_code": "MCI35",
+          "call_type_description": "CONFINED SPACE INCIDENT"
+        },
+        {
+          "call_type_code": "MCI36",
+          "call_type_description": "Mass Casuality Incident (MCI) Hazardous Fumes (last used 2/16/95)"
+        },
+        {
+          "call_type_code": "MCI37",
+          "call_type_description": "Tunnel incident (non-rail)"
+        },
+        {
+          "call_type_code": "MCI38",
+          "call_type_description": "MARINE / HARBOR INCIDENT"
+        },
+        {
+          "call_type_code": "MCI39",
+          "call_type_description": "AIRCRAFT EMERGENCY STANDBY"
+        },
+        {
+          "call_type_code": "MCI40",
+          "call_type_description": "AIRCRAFT INCIDENT / CRASH"
+        },
+        {
+          "call_type_code": "MCI42",
+          "call_type_description": "CIVIL DISTRUBANCE"
+        },
+        {
+          "call_type_code": "MCI43",
+          "call_type_description": "HOSTAGE SITUATION / BARRICADED"
+        },
+        {
+          "call_type_code": "MCI44",
+          "call_type_description": "POWER FAILURE / BLACKOUT"
+        },
+        {
+          "call_type_code": "MCI48",
+          "call_type_description": "HAZARDOUS MATERIALS INCIDENT"
+        },
+        {
+          "call_type_code": "MCI50",
+          "call_type_description": "ACTIVE SHOOTER"
+        },
+        {
+          "call_type_code": "MCI57",
+          "call_type_description": "Mutual Aid Request"
+        },
+        {
+          "call_type_code": "MCI58",
+          "call_type_description": "PLANNED MCI / STANDBY RESPONSE"
+        },
+        {
+          "call_type_code": "MCI59",
+          "call_type_description": "ALL OTHER MCI'S"
+        },
+        {
+          "call_type_code": "MCI80",
+          "call_type_description": "HAZARDOUS MATERIALS INCIDENT"
+        },
+        {
+          "call_type_code": "SPEVNT",
+          "call_type_description": "SPECIAL EVENT"
+        },
+        {
+          "call_type_code": "STNDBM",
+          "call_type_description": "MUNICIPAL UNIT STAND BY REQ"
+        },
+        {
+          "call_type_code": "STNDBY",
+          "call_type_description": "REQUEST FOR STAND-BY"
+        },
+        {
+          "call_type_code": "STRANS",
+          "call_type_description": "STATUS TRANSFER REQUEST"
+        }
+      ]
+    }
+  ]
+}
