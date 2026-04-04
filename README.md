@@ -3,6 +3,7 @@
 - API endpoint: https://data.cityofnewyork.us/resource/76xm-jjuj.json
 - OpenAPI documentation: https://dev.socrata.com/foundry/data.cityofnewyork.us/76xm-jjuj
 - Codebook: [ems_codebook.json](ems_codebook.json)
+- NYC shapefile: https://data.mixi.nyc/nyc-zip-codes.geojson
 
 # Get the Data into a local SQLite database
 
